@@ -19,17 +19,6 @@ Switch to the database and execute the schema.sql (db/schema.sql)
 In the Java program, the database connection is managed by the DatabaseConnection.java class.
 You need to configure the connection string, username, and password to match your PostgreSQL setup.
 
-Example:
-public class DatabaseConnection {
-    private static final String URL = "jdbc:postgresql://localhost:5432/Assignment3Q1";
-    private static final String USER = "postgres";
-    private static final String PASSWORD = "your_password";
-
-    public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(URL, USER, PASSWORD);
-    }
-}
-
 ### 3. Compile and Run Instructions
 # Compile the project:
 mvn compile
